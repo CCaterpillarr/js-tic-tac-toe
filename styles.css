@@ -1,0 +1,109 @@
+/* whole document rules */
+
+html {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(230, 230, 230);
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.veil {
+	width: 450px;
+	height: 450px;
+	background-color: rgba(230, 230, 230, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* header */
+
+.header {
+	display: flex;
+	padding: 0 20px;
+}
+
+button {
+	padding: 0 30px;
+	margin: 10px 0 10px 25px;
+	font-size: 24px;
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+	border: 1px solid rgb(122, 122, 122);
+}
+
+#JS {
+	color: #323330;
+	background-color: #f0db4f;
+	padding: 15px 2px 2px 15px;
+}
+
+.announcement {
+	background-color: white;
+	font-size: 50px;
+	position: absolute;
+	padding: 50px;
+	left: 0;
+	right: 0;
+	bottom: 70px;
+	text-align: center;
+	box-shadow: 10px 10px 10px rgb(204, 204, 204);
+	animation: fadeIn 0.4s;
+}
+
+/* tiles */
+
+#playSection {
+	margin: 35px auto 0 auto;
+	animation: fadeIn 0.2s;
+	position: relative;
+	width: 450px;
+	height: 450px;
+}
+
+.flexContainer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tile {
+	width: 150px;
+	height: 150px;
+	background-color: rgb(230, 230, 230);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 90px;
+}
+.topBorder {
+	border-top: 5px solid rgb(122, 122, 122);
+}
+.sideBorder {
+	border-right: 5px solid rgb(122, 122, 122);
+}
+
+/* .redLine {
+	width: 8px;
+	height: 450px;
+	border-radius: 10px;
+	background-color: red;
+	color: red;
+	position: absolute;
+}
+ */
